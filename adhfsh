@@ -1,0 +1,6 @@
+
+    function onConnection(client,...)
+        function client:onPublish(publication)
+            if tostring(self.address.host) ~= "127.0.0.1" then error("publication unauthorized") end
+        end
+    end
